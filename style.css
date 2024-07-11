@@ -1,0 +1,145 @@
+*{
+    padding: 0px;
+    margin: opx;
+    box-sizing: border-box;
+    font-family: 'poppins' , sans-serif;
+    background-color: #0c182f;
+}
+.header{
+    margin: opx 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.logoimg{
+    height: 200px;
+    width: 200px;
+    margin: 0px 30px;
+}
+.links{
+    margin-right: 50px;
+    text-decoration: none;
+    font-size: 30px;
+    color: rgb(191, 205, 218);
+    transition: all 1s;
+}
+.links:hover{
+    color: #FFBD59;
+    font-size: 60px;
+}
+
+#home{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        
+    }
+
+.intro{
+    padding: 30px;
+    margin-top: 50px;
+    font-size: 30px;
+    line-height: 15px;
+}
+.intro_head{
+    margin-top: 50px;
+    color: rgb(214, 225, 242);
+    margin-bottom: 0px;
+}
+.intro_subhead{
+
+    color: rgb(230, 204, 100);
+}
+
+.intro_p{
+    text-align: justify;
+    line-height: 40px; 
+    margin-bottom: 40px ;
+    color: rgb(214, 225, 242);
+    font-size: 20px;
+}
+
+.intro_link{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 30px ; 
+}
+
+/* .link:active{
+
+} */
+
+/* .intro_img{
+    position: relative;
+    display: float;
+} */
+/* .intro_img1{
+    height: 600px;
+     margin: 0px 0px 0px 120px; 
+     position: absolute;
+} */
+
+/* .intro_img2{
+    height: 500px;
+    margin: 80px 0px 0px 100px;
+} */
+#about{
+    display: flex;
+
+    margin: 300px 230px ;
+    text-align: center;
+}
+/* .abt_img>img{
+    height: 500px;
+    width: 700px;
+} */
+.abt_content>h4{
+    color:  rgb(214, 225, 242) ;
+    margin-bottom: 90px;
+    font-size: 30px;
+
+}
+.abt_content>p{
+    text-align: justify;
+    color:  #f1c17d;
+    background-color:  #152a51;
+    height: 300px;
+    width: 1000px;
+    line-height: 30px;
+    border: ridge  rgb(78, 114, 172) ;
+    border-radius: 200px;
+    padding: 30px 150px;
+}
+html{
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    visibility: hidden;
+}
+/* .abt_content>p::first-letter{
+
+    font-size: 20px;
+} */
+/* .abt_content>p::first-line{
+    color: blueviolet;
+}  */
+#contact{
+    display: flex;
+
+    margin: 400px 600px ;
+    text-align: center;
+}
+.contact_link{
+line-height: 60px;
+}
+.contact_link>h2{
+    color: rgb(60, 101, 136);
+    font-family: cursive;
+}
+.contact_link>a{
+    color: rgb(187, 209, 241);
+   text-decoration: none;
+}
