@@ -6,11 +6,13 @@
     background-color: #0c182f;
 }
 .header{
-    margin: opx 40px;
+    /* margin: opx 40px; */
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    position: fixed;
+    width: 100%;
+    height: 100px;
 }
 .logoimg{
     height: 200px;
@@ -20,13 +22,17 @@
 .links{
     margin-right: 50px;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 25px;
     color: rgb(191, 205, 218);
     transition: all 1s;
+    
 }
 .links:hover{
     color: #FFBD59;
-    font-size: 60px;
+    font-size: 50px;
+}
+.links:active{
+    color: #152a51;
 }
 
 #home{
@@ -37,7 +43,7 @@
 
 .intro{
     padding: 30px;
-    margin-top: 50px;
+    margin-top: 200px;
     font-size: 30px;
     line-height: 15px;
 }
@@ -59,37 +65,59 @@
     font-size: 20px;
 }
 
-.intro_link{
+ .intro_link1{
     text-decoration: none;
-    color: white;
-    background-color: black;
-    padding: 10px;
+    color: rgb(129, 166, 240);
+    background-color: #0c182f;
+    padding: 10px 20px;
     border-radius: 5px;
     margin-left: 30px ; 
+    border: solid  rgb(129, 166, 240);
+    font-size: 20px;
+    transition: all 1s;
+} 
+
+ .intro_link1:hover{
+color: #0c182f;
+background-color:  rgb(129, 166, 240);
 }
+.intro_link2{
+    text-decoration: none;
+    color: #0c182f;
+    background-color: rgb(129, 166, 240) ;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-left: 30px ; 
+    border: solid  rgb(129, 166, 240);
+    font-size: 20px;
+    transition: all 1s;
+} 
 
-/* .link:active{
-
+ .intro_link2:hover{
+color:rgb(129, 166, 240) ;
+background-color: #0c182f ;
+}
+.intro_img{
+    /* position: relative;
+    display: float; */
+    
+ }  
+ .intro_img1{
+    height: 1000px;
+     margin: 100px 0px 0px 200px; 
+     /* position: absolute; */
+     
+} 
+/* .intro_img1:hover {
+    left: 55%;
 } */
-
-/* .intro_img{
-    position: relative;
-    display: float;
-} */
-/* .intro_img1{
-    height: 600px;
-     margin: 0px 0px 0px 120px; 
-     position: absolute;
-} */
-
 /* .intro_img2{
     height: 500px;
     margin: 80px 0px 0px 100px;
 } */
 #about{
     display: flex;
-
-    margin: 300px 230px ;
+    margin: 0px 230px ;
     text-align: center;
 }
 /* .abt_img>img{
@@ -97,10 +125,10 @@
     width: 700px;
 } */
 .abt_content>h4{
-    color:  rgb(214, 225, 242) ;
-    margin-bottom: 90px;
+    color:  rgb(167, 188, 219) ;
+    margin-bottom: 100px;
     font-size: 30px;
-
+    font-family: cursive;
 }
 .abt_content>p{
     text-align: justify;
@@ -113,33 +141,104 @@
     border-radius: 200px;
     padding: 30px 150px;
 }
+.abt_content>a{
+    text-decoration: none;
+    color: rgb(129, 166, 240);
+    background-color: #0c182f;
+    padding: 10px 20px;
+    border-radius: 50px;
+    margin-top: 30px;
+    margin-left: 30px ; 
+    border: solid   #21314f;
+    font-size: 20px;
+    transition: all 1s;
+} 
+
+.abt_content>a:hover{
+color: #0c182f;
+background-color: #f1c17d ;
+padding: 7px 15px;
+font-size: 15px;
+border: solid  #f1c17d ;
+}
 html{
     scroll-behavior: smooth;
 }
 ::-webkit-scrollbar{
     visibility: hidden;
 }
-/* .abt_content>p::first-letter{
 
+#education{
+    margin: 200px 200px ;
+    text-align: center;
+}   
+.edu_head{
+    color:#bfa279;
     font-size: 20px;
-} */
-/* .abt_content>p::first-line{
-    color: blueviolet;
-}  */
+    border-top: solid 1px;
+    margin: 100px 0px 0px 10px;
+    font-family: cursive;
+} 
+.edu_content{
+display: grid;
+ grid-template-columns: auto auto;
+grid-template-rows: auto auto auto auto ; 
+color: aliceblue;
+margin: 50px 130px 150px 130px;
+}
+.edu{
+    width: 400px;
+   padding: 35px;
+   border-bottom: #d6b077 solid 1px;
+}
+ 
 #contact{
     display: flex;
-
-    margin: 400px 600px ;
     text-align: center;
+    margin: 250px 600px;
 }
 .contact_link{
-line-height: 60px;
+    line-height: 60px;
 }
 .contact_link>h2{
     color: rgb(60, 101, 136);
     font-family: cursive;
+    font-size: 30px;
 }
 .contact_link>a{
     color: rgb(187, 209, 241);
-   text-decoration: none;
+    text-decoration: none;
+    font-size: 20px;
+    transition: all 1s;
 }
+.contact_link>a:hover{
+    text-decoration-line:  underline;
+    color: #FFBD59;
+}
+.socialicons a{
+    font-size: 30px;
+    color: rgb(148, 182, 219);
+    padding: 10px;
+    transition: all 1s;
+} 
+.socialicons a:hover{
+    font-size: 40px;
+    color: #FFBD59;
+}
+/* .fa-instagram{
+    font-size: 30px;
+    color: rgb(123, 174, 233);
+
+}
+.fa-github{
+    font-size: 30px;
+    color: rgb(123, 174, 233);
+}
+.fa-facebook{
+    font-size: 30px;
+    color: rgb(123, 174, 233);
+}
+.fa-linkedin-in{
+    font-size: 30px;
+    color: rgb(123, 174, 233);
+} */
